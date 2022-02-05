@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(189, 41%, 97%);
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.img {
+  margin: 15px 5px;
+}
+
+main1 {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(189, 41%, 97%);
+  max-width: 60%;
+  min-width: 660px;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.section1 {
+  position: relative;
+  margin-top: 15px;
+  width: 50%;
+  color: hsl(184, 14%, 56%);
+}
+
+input {
+  text-align: right;
+  font-family: "Space Mono", monospace;
+}
+
+input[type="number"]::placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+input[type="number"]::content {
+  background-color: black;
+  text-align: center;
+}
+.person {
+  width: 90%;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.158);
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  padding: 5px;
+}
+.person:hover {
+  border: 2px solid hsl(184, 14%, 56%);
+  border-color: hsl(172, 67%, 45%);
+}
+
+.img1 {
+  position: absolute;
+  top: 12.5%;
+  left: 3%;
+}
+
+.percent {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  font-weight: 400;
+  padding: 3px;
+  border: 1px solid hsl(183, 100%, 15%);
+  border-radius: 4px;
+  width: 27%;
+  height: 40px;
+  margin: 5px;
+}
+
+.percent:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.img2 {
+  position: absolute;
+  top: 82.5%;
+  left: 3%;
+}
+
+.section2 {
+  width: 50%;
+  padding: 20px 15px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.margy {
+  margin-top: 25px;
+}
+
+.flexy2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 29px;
+}
+
+span {
+  font-size: 45px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reset {
+  margin-top: 75px;
+  width: 98%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.custom {
+  background-color: rgba(128, 128, 128, 0.158);
+  color: hsl(186, 14%, 43%);
+  border: none;
+  padding: 1px;
+  text-align: center;
+}
+.custom:hover {
+  background-color: hsl(172, 67%, 45%);
+  border-color: hsl(172, 67%, 45%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.flexy3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.zero {
+  position: absolute;
+  top: 74%;
+  left: 66%;
+  color: rgba(255, 0, 0, 0.459);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.people {
+  border-color: green;
+}
+
+@media (max-width: 768px) {
+  main {
+    min-width: 500px;
+  }
+
+  .percent {
+    width: 25%;
+  }
+
+  .zero {
+    top: 89.5%;
+    left: 56%;
+  }
+}
+
+@media (max-width: 586px) {
+  main {
+    flex-direction: column;
+    min-width: 80%;
+    padding: 5px 5px;
+  }
+
+  .zero {
+    top: 91.5%;
+    left: 52%;
+  }
+
+  .section1 {
+    width: 70%;
+  }
+
+  .section2 {
+    width: 80%;
+  }
+
+  .percent {
+    width: 40%;
+    margin: 7px 5px;
+  }
+  .img2 {
+    top: 84.5%;
+  }
+  .img1 {
+    top: 11.5%;
+  }
+  .tipAmount,
+  .total {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 15px;
+  }
+  .zero {
+    font-size: 12px;
+    left: 43%;
+  }
+  .tipAmount,
+  .total {
+    font-size: 30px;
+  }
+  .number {
+    font-size: 13px;
+  }
+  .percent {
+    margin: 4px;
+  }
+}
